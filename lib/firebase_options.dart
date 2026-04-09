@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -36,10 +33,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -59,4 +53,23 @@ class DefaultFirebaseOptions {
     projectId: 'fir-auth-activity13',
     storageBucket: 'fir-auth-activity13.firebasestorage.app',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDQaBKhLZ1Kv2AyRi2S9jJUMqCWDW4zFBA',
+    appId: '1:28465003983:web:00ba587c307bb7ad0da6ba',
+    messagingSenderId: '28465003983',
+    projectId: 'fir-auth-activity13',
+    authDomain: 'fir-auth-activity13.firebaseapp.com',
+    storageBucket: 'fir-auth-activity13.firebasestorage.app',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyDQaBKhLZ1Kv2AyRi2S9jJUMqCWDW4zFBA',
+    appId: '1:28465003983:web:0933e0e4cfb6365c0da6ba',
+    messagingSenderId: '28465003983',
+    projectId: 'fir-auth-activity13',
+    authDomain: 'fir-auth-activity13.firebaseapp.com',
+    storageBucket: 'fir-auth-activity13.firebasestorage.app',
+  );
+
 }
