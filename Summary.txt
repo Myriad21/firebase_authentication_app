@@ -1,0 +1,6 @@
+CSC 4360 - In-Class Activity 13 Submission
+Student: Trajuan Smith
+GitHub Repository: https://github.com/Myriad21/firebase_authentication_app
+APK File: firebase_authentication.apk
+Reflection Document: relfection_activity13_TrajuanSmith.docx
+Notes: No additional notes.
