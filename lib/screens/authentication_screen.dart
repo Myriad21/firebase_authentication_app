@@ -49,12 +49,10 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
         ),
       );
 
-      /*
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const ProfileScreen()),
       );
-      */
     } catch (e) {
       if (!mounted) return;
 
